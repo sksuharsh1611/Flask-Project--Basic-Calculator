@@ -1,0 +1,65 @@
+For responsive webpage:
+Take Form inputs:
+
+1. Create a folder >> templates
+2. Inside templates >> Create files: [These files will be developed by UI developers, we'll use it as DS]
+                    1. index.html
+                    2. results.html
+
+3. Create one more folder >> "static"
+    Inside static folder >> Create one more folder "css"
+    Indise css >> paste "#main.css" [Provided by UI dev's]
+              >>  paste "#style.css" [Provided by UI dev's]
+
+4. Go to app.py >> import render_template , request , jsonify
+
+GET / POST >> Sending data itself
+
+GET >> Sending data which is visible to all 
+ex: Google Search {data science}>> Appended in main url 
+
+POST >> Sending data through body.
+ex: Email sign in Gmail.
+
+
+Project Objective : Add/Divide/Multiply/ subtract
+            Take 2 inputs > inp1 and inp2 
+    Should have a dropdown > add,sub,div,mul
+    Click 'Calculate' button for performing actions.
+    
+css> Helps in beautification ->  If user wants diff background color: change in style.css file
+
+On click of Calculate it binds url of /math with main URL.
+
+>>5. Need to create math_operation function
+
+
+Write Codes and logic using python for calculator
+
+
+Now using Alternate method:[POSTMAN]
+Before using it >> Need to install in local sytem >>https://www.postman.com/downloads/
+POSTMAN >>  To test APIs
+Use HTTP request 
+Then Change method >> 'POST' >> give URL https://orange-psychiatrist-ttgej.pwskills.app:5000/postman_data 
+
+Now it's reaches to our method >> Now we need data to perform math_operation:
+data would be passing in key:value pair where key = operation(num1) and value =add/subtract/multiply and 23,457,88
+
+Now select Body > raw > JSON
+#Code here: 
+{
+    "operation": "add",
+    "num1": 23,
+    "num2": 2
+
+}
+
+Re-run app.py
+
+>> Click on Send {On Postman}
+Output will be displayed.
+
+
+Postman tool is used across the industries for testing APIs.
+We can test any API using Postman tool.
